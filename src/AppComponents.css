@@ -6,6 +6,9 @@
     --subTitle: 25px;
     --smallTitle: 25px;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{margin: 0;padding: 0;}
 h1{
     width: fit-content;
@@ -41,6 +44,12 @@ div.app > section{
     justify-content: center;
     align-items: center;
 }
+.mini-card p{
+    font-size: var(--body);
+}
+.colum.progetti .mini-card{
+    height: auto;
+}
 section.head header{
     width: 80vw;
     display: flex;
@@ -71,4 +80,37 @@ div.v-divider{
 }
 .subjects .column .card p{
     font-size: var(--body);
+}
+
+.subjects p{
+    font-size: var(--body);
+}
+div.vflex{
+    display: flex;
+    flex-direction: column;
+}
+div.vflex .column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+div.mini-card{
+    width: calc(100% - 60px);
+    padding: 20px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    background:linear-gradient(to bottom right, #9e9aa9, #9fafa4);
+}
+div.extra{
+    padding: 25px;
+}
+div.extra ul{
+    padding-left: 30px;
+}
+div.extra ul li{
+    font-size: var(--body);
+    font-weight: bold;
 }
